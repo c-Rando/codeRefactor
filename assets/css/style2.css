@@ -1,33 +1,14 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.header-formatting, .nav-bar  { 
-    
-    display: inline-flex;
-    align-items: baseline;
-}
-
-.nav-bar, p {
-    order: 3;
-    display: table-header-group;
-    align-items: flex-end;
-}
-
-.p, .nav-contents {
-
-    align-self: flex-end;
-    font-size: 16px;
-}
-
 body {
     background-color: #d9dcd6;
 }
- /* testing */
 
- /* testing 2 */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -35,42 +16,39 @@ header {
     color: #ffffff;
 }
 
-
 header h1 {
-    text-align: left;
+    display: inline-block;
     font-size: 48px;
 }
 
 header h1 .seo {
-    order: 2;
     color: #d9dcd6;
 }
 
-
-
-header section {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
-    font-family: 'Gill Sans','Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    font-size: 20px;  
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
-
-header section ul {
-    align-content: space-between;
-    display: flex;
-    justify-content: end;
-    text-align: right;
-    padding-left: 70%;
-    margin-right: 15px;
+header nav ul {
+    list-style-type: none;
 }
 
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
 
 a {
-
-    display: inline;
     color: #ffffff;
     text-decoration: none;
+}
+
+p {
+    font-size: 16px;
 }
 
 .hero {
@@ -90,7 +68,6 @@ a {
 .float-right {
     float: right;
     margin-left: 25px;
-
 }
 
 .content {
@@ -99,14 +76,8 @@ a {
     margin-left: 20px;
 }
 
-.content[img] {
-    max-height: 200px;
-}
-
-
-aside {
+.benefits {
     margin-right: 20px;
-    margin-bottom: 10px;
     padding: 20px;
     clear: both;
     float: right;
@@ -114,6 +85,15 @@ aside {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+}
+
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
     color: #ffffff;
 }
 
@@ -155,32 +135,6 @@ aside {
     max-width: 150px;
 }
 
-/* 
-.section-container {
-    float: left;
-    position: absolute;
-} */
-
-.content-container {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-
-.content-container h2  {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.content-container img {
-    max-height: 200px;
-}
-
-/* 
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -188,9 +142,7 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-} */
-
-
+}
 
 .online-reputation-management {
     margin-bottom: 20px;
@@ -208,17 +160,42 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-} 
+}
 
-
-.social-media-marketing img,
-.online-reputation-management img,
 .search-engine-optimization img {
     max-height: 200px;
 }
 
-h2  {
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+.search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
